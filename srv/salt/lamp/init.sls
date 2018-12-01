@@ -10,6 +10,12 @@ pkg.installed
 mariadb-client:
 pkg.installed
 
+#Kotisivu
 #/var/www/html/index.html:
 # file.managed:
 #   - source: salt://lamp/index.html
+
+#PHP-toimimaan
+#/var/ :
+# file.managed:
+#   - source: salt://lamp/php7.2.conf
