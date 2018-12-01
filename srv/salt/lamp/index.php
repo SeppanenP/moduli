@@ -7,6 +7,12 @@
 <body>
 
 <h1>Terve Maailma!!!</h1>
+<br>
+<!-- Alla testi toimiiko PHP -->
+2 + 2 = 
+ <?php
+	 print(2+2);
+ ?>
 
 </body>
 </html>
