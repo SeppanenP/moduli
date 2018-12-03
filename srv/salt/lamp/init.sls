@@ -1,14 +1,14 @@
 apache2:
-pkg.installed
+  pkg.installed
 
 libapache2-mod-php:
-pkg.installed
+  pkg.installed
 
 mariadb-server:
-pkg.installed
+  pkg.installed
 
 mariadb-client:
-pkg.installed
+  pkg.installed
 
 #Kotisivu
 #/var/www/html/index.html:
