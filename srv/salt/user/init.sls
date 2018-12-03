@@ -1,5 +1,5 @@
 newuser:
-  user.absent:
+  user.present:
     - fullname: newuser
     - shell: /bin/zsh
     - home: /home/newuser
@@ -7,7 +7,7 @@ newuser:
     - gid: 4000
     - groups:
       - adm
-      - testi
+      - test
     - password: goodpassword
     - enforce_password: True
 # - key.pub: True
