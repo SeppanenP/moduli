@@ -1,7 +1,7 @@
 newuser:
   user.absent:
     - fullname: newuser
-    - shell: /bin/bash
+    - shell: /bin/zsh
     - home: /home/newuser
     - uid: 4000
     - gid: 4000
