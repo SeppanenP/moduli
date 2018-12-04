@@ -21,7 +21,7 @@ mariadb-client:
     - source: salt://lamp/php7.2.conf
     
 #User WWW
-/home/xubuntu/public_html/index.php
+/home/xubuntu/public_html/index.php:
   file.managed:
     - source: salt://lamp/index.php
 
