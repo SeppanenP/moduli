@@ -1,7 +1,7 @@
 newuser:
   user.present:
     - fullname: newuser
-    - shell: /bin/zsh
+    - shell: /bin/bash
     - home: /home/newuser
     - uid: 4000
     - gid: 4000
