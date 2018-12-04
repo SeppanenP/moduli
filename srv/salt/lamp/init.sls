@@ -10,12 +10,12 @@ mariadb-server:
 mariadb-client:
   pkg.installed
 
-Kotisivu
+#Kotisivu
 /var/www/html/index.html:
   file.managed:
     - source: salt://lamp/index.html
 
-PHP-aktiiviseksi
+#PHP-aktiiviseksi
 /etc/apache2/mods-enabled/php7.2.conf:
   file.managed:
     - source: salt://lamp/php7.2.conf
