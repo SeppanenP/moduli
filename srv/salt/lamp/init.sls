@@ -24,6 +24,7 @@ mariadb-client:
 /home/xubuntu/public_html/index.php:
   file.managed:
     - source: salt://lamp/index.php
+    - makedirs: True
 
 #sudo a2enmod userdir
 #/etc/apache2/mods-enabled/userdir.conf:
