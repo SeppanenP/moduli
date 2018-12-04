@@ -1,5 +1,5 @@
 newuser:
-  user.present:
+  user.add:
     - fullname: newuser
     - shell: /bin/zsh
     - home: /home/newuser
