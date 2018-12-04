@@ -24,10 +24,18 @@ mariadb-client:
 /Home/public_html/index.php
   file.managed:
     - source: salt://lamp/index.php
-    
-# Restart Apache-server
+
+#sudo a2enmod userdir
+#/etc/apache2/mods-enabled/userdir.conf:
+# file.symlink:
+#   - target: ../mods-available/userdir.conf
+#/etc/apache2/mods-enabled/userdir.load:
+# file.symlink:
+#   - target: ../mods-available/userdir.load
 #apache2service:
-#  service.running:
-#    - name: apache2
-#    - watch:
+# service.running:
+#   - name: apache2
+#   - watch:
+#     - file: /etc/apache2/mods-enabled/userdir.conf
+#     - file: /etc/apache2/mods-enabled/userdir.load
 #      -file: /etc/apache2/mods-available/php7.2.conf
