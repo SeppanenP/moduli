@@ -4,4 +4,5 @@ Tämä moduli liittyy Haaga-Helian kurssiin Palvelinten hallinta ICT4TN022. Teht
 
 
 Kopidaan moduli koneelle ja aejtaan komento
-  sudo salt-call --local state.highstate --file-root srv/salt
+
+    sudo salt-call --local state.highstate --file-root srv/salt
