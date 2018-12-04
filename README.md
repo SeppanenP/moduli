@@ -26,6 +26,6 @@ Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
 
 ## Modulin käyttö
 
-Kopidaan moduli koneelle ja ajetaan komento
+Kopidaan moduli koneelle, mennään kansioon /moduli ja ajetaan komento
 
     sudo salt-call --local state.highstate --file-root srv/salt
