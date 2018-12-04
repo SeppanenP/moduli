@@ -19,3 +19,10 @@ mariadb-client:
 /etc/apache2/mods-enabled/php7.2.conf:
   file.managed:
     - source: salt://lamp/php7.2.conf
+    
+# Restart Apache-server
+apache2service:
+  service.running:
+    - name: apache2
+    - watch:
+      -file: /etc/apache2/mods-enabled/php7.2.conf
