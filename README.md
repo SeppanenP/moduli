@@ -7,7 +7,7 @@ http://terokarvinen.com/
 
 ## Modulin tekemiseen ja testaamiseen käytetyt työkalut
 
-Käytin tehtävän tekeminseen Fujitsun kannettavaa tietokonetta Lifebook xxxx ja siinä livetikkua Ubuntu 18.04. Tämän lisäksi asensin koneelle virtuaalikoneita testaamiseen, eli asensin koneelle Vagrantin ja Virtualboxin. Käytin versionhallinnassa GitHubia. Tarkemmin koneiden käytöstä löytyy ohjeita kurssille tekemistäni aikaisemmista kotitehtävistä:
+Käytin tehtävän tekeminseen Fujitsun kannettavaa tietokonetta Lifebook xxxx ja siinä livetikkua Ubuntu 18.04. Tämän lisäksi asensin koneelle virtuaalikoneita testaamiseen, eli asensin livetikkukoneelle Vagrantin ja Virtualboxin. Käytin versionhallinnassa GitHubia. Tarkemmin eri vaiheista (mm. vagrant ja virtuaalikoneen tekeminen) löytyy ohjeita samalle kurssille tekemistäni aikaisemmista kotitehtävistä:
 
 https://pseppanen296518693.wordpress.com/
 
@@ -19,10 +19,13 @@ ja Vagrantin avulla asennetuissa testikoneissa:
 
     sudo apt-get install -y git salt-minion
     
-    
+Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
 
+     git clone https://github.com/SeppanenP/moduli.git
+     
+
+## Modulin käyttö
 
 Kopidaan moduli koneelle ja ajetaan komento
 
     sudo salt-call --local state.highstate --file-root srv/salt
-
