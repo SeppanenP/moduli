@@ -16,7 +16,7 @@ mariadb-client:
     - source: salt://lamp/index.php
 
 #enable PHP
-/etc/apache2/mods-enabled/php7.2.conf:
+/etc/apache2/mods-available/php7.2.conf:
   file.managed:
     - source: salt://lamp/php7.2.conf
     
@@ -25,4 +25,4 @@ apache2service:
   service.running:
     - name: apache2
     - watch:
-      -file: /etc/apache2/mods-enabled/php7.2.conf
+      -file: /etc/apache2/mods-available/php7.2.conf
