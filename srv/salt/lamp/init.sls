@@ -27,11 +27,11 @@ mariadb-client:
 
 #sudo a2enmod userdir
 #/etc/apache2/mods-enabled/userdir.conf:
-# file.symlink:
-#   - target: ../mods-available/userdir.conf
+#   file.managed:
+#   - source: salt://lamp/userdir.conf
 #/etc/apache2/mods-enabled/userdir.load:
-# file.symlink:
-#   - target: ../mods-available/userdir.load
+#   file.managed:
+#   - source: salt://lamp/userdir.load
 #apache2service:
 # service.running:
 #   - name: apache2
