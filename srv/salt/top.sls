@@ -1,3 +1,4 @@
 base:
   '*':
-    - lamp
+#    - lamp
+    - setmariadb
