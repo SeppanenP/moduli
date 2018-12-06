@@ -4,12 +4,6 @@ apache2:
 libapache2-mod-php:
   pkg.installed
 
-mariadb-server:
-  pkg.installed
-
-mariadb-client:
-  pkg.installed
-
 #Public HTML
 /var/www/html/index.html:
   file.managed:
