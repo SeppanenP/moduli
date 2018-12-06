@@ -6,7 +6,7 @@ mariadb-client:
   pkg.installed
   
 #Create database and user
-/tmp/mariasettings.sql
+/tmp/mariasettings.sql:
   file.managed:
     - mode: 600
     - source: salt://setmariadb/mariasettings.sql
