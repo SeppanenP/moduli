@@ -6,11 +6,10 @@ mariadb-client:
   pkg.installed
   
 #Create database and user
-/tmp/
+/tmp/mariasettings.sql
   file.managed:
     - mode: 600
-    - source: salt://setmariadb/
-- source: salt://mariadb/createuser.sql 
+    - source: salt://setmariadb/mariasettings.sql
 'cat /tmp/createuser.sql|mariadb -u root':
 cmd.run:
   - unless: "echo 'show databases'|sudo mariadb -u root|grep '^products$'"
