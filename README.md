@@ -27,7 +27,7 @@ Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
     
     
 ## Firewall
-Tein asennuksen ensin manuaalisesti ja sen jälkeen katsoin mitä tiedostoja on muutettu komentojen yhteydessä /etc -kaniossa. Komento löytyy kurssin opettajan sivulta http://terokarvinen.com/2018/apache-user-homepages-automatically-salt-package-file-service-example
+Tein asennuksen ensin manuaalisesti ja sen jälkeen katsoin mitä tiedostoja on muutettu komentojen yhteydessä /etc -kansiossa. Komento löytyy kurssin opettajan sivulta http://terokarvinen.com/2018/apache-user-homepages-automatically-salt-package-file-service-example
  
      sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort
      
@@ -47,3 +47,10 @@ Kopioin nämä moduliin firewall-kansioon ja tein sinne myös init.sls -tiedosto
 Kopidaan moduli koneelle, mennään kansioon /moduli ja ajetaan komento
 
     sudo salt-call --local state.highstate --file-root srv/salt
+
+
+##Lähteet
+http://terokarvinen.com/
+https://www.richterich.me/index.php/salt-states/ufw/ 
+
+
