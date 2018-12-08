@@ -11,11 +11,11 @@ ufw:
 #4506 (v6)                  ALLOW       Anywhere (v6)             
 #80/tcp (v6)                ALLOW       Anywhere (v6)             
 
-/etc/ufw/user.rules
+/etc/ufw/user.rules:
   file.managed:
     - source: salt://firewall/user.rules
     
-/etc/ufw/user6.rules
+/etc/ufw/user6.rules:
   file.managed:
     - source: salt://firewall/user6.rules
 
