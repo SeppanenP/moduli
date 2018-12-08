@@ -1,4 +1,5 @@
 base:
   '*':
 #    - lamp
-    - setmariadb
+#    - setmariadb
+     - firewall
