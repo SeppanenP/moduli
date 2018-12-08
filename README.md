@@ -23,8 +23,8 @@ Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
 
      git clone https://github.com/SeppanenP/moduli.git
      
-    
-    
+## LAMP
+Lamp asentaa LAMP-kilkeet, aktivoi PHP:n, kotisivut, käyttäjän oman sivun ja tekee MariaDB:lle products-tietokannan, käyttäjän ja sille oikeudet tietokantaan.
     
 ## Firewall
 Tein asennuksen ensin manuaalisesti ja sen jälkeen katsoin mitä tiedostoja on muutettu komentojen yhteydessä /etc -kansiossa. Kansion löytämisessä auttoi sivusto https://www.comentum.com/unix-linux-ip-firewall.html. Komento löytyy kurssin opettajan sivulta http://terokarvinen.com/2018/apache-user-homepages-automatically-salt-package-file-service-example
