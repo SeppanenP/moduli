@@ -23,6 +23,24 @@ Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
 
      git clone https://github.com/SeppanenP/moduli.git
      
+    
+    
+    
+## Firewall
+Tein asennuksen ensin manuaalisesti ja sen jälkeen katsoin mitä tiedostoja on muutettu komentojen yhteydessä /etc -kaniossa. Komento löytyy kurssin opettajan sivulta http://terokarvinen.com/2018/apache-user-homepages-automatically-salt-package-file-service-example
+ 
+     sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort
+     
+ Viimeisimmät muutokset oli tehty tiedostoihin:
+ 
+    2018-12-08+18:54:28.9220822350 A ./user.rules
+    2018-12-08+18:54:28.9220822350 A ./user6.rules
+    
+Kopioin nämä moduliin firewall-kansioon ja tein sinne myös init.sls -tiedoston. Palomuurin aktivointiin löysin apua sivustolta https://www.richterich.me/index.php/salt-states/ufw/ .
+
+ 
+
+     
 
 ## Modulin käyttö
 
