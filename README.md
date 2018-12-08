@@ -23,7 +23,7 @@ Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
 
      git clone https://github.com/SeppanenP/moduli.git
      
-## LAMP
+## LAMP ja MariaDB
 Lamp asentaa LAMP-kilkeet, aktivoi PHP:n, kotisivut, käyttäjän oman sivun ja tekee MariaDB:lle products-tietokannan, käyttäjän ja sille oikeudet tietokantaan.
     
 ## Firewall
