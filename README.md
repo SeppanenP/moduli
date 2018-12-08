@@ -27,7 +27,7 @@ Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
     
     
 ## Firewall
-Tein asennuksen ensin manuaalisesti ja sen jälkeen katsoin mitä tiedostoja on muutettu komentojen yhteydessä /etc -kansiossa. Komento löytyy kurssin opettajan sivulta http://terokarvinen.com/2018/apache-user-homepages-automatically-salt-package-file-service-example
+Tein asennuksen ensin manuaalisesti ja sen jälkeen katsoin mitä tiedostoja on muutettu komentojen yhteydessä /etc -kansiossa. Kansion löytämisessä auttoi sivusto https://www.comentum.com/unix-linux-ip-firewall.html. Komento löytyy kurssin opettajan sivulta http://terokarvinen.com/2018/apache-user-homepages-automatically-salt-package-file-service-example
  
      sudo find -printf '%T+ M %p\n%A+ A %p\n%C+ C %p\n'|sort
      
@@ -36,12 +36,9 @@ Tein asennuksen ensin manuaalisesti ja sen jälkeen katsoin mitä tiedostoja on 
     2018-12-08+18:54:28.9220822350 A ./user.rules
     2018-12-08+18:54:28.9220822350 A ./user6.rules
     
-Kopioin nämä moduliin firewall-kansioon ja tein sinne myös init.sls -tiedoston. Palomuurin aktivointiin löysin apua sivustolta https://www.richterich.me/index.php/salt-states/ufw/ .
+Kopioin nämä moduliin firewall-kansioon ja tein sinne myös init.sls -tiedoston. Palomuurin aktivointiin löysin apua sivustolta https://github.com/joonaleppalahti/CCM/blob/master/salt/srv/salt/firewall.sls.
 
  
-
-     
-
 ## Modulin käyttö
 
 Kopidaan moduli koneelle, mennään kansioon /moduli ja ajetaan komento
@@ -52,5 +49,6 @@ Kopidaan moduli koneelle, mennään kansioon /moduli ja ajetaan komento
 ##Lähteet
 http://terokarvinen.com/
 https://www.richterich.me/index.php/salt-states/ufw/ 
-
+https://www.comentum.com/unix-linux-ip-firewall.html
+https://github.com/joonaleppalahti/CCM/blob/master/salt/srv/salt/firewall.sls
 
