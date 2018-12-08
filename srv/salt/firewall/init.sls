@@ -2,6 +2,15 @@ ufw:
   pkg.installed
 
 #Set ufw rules
+#22/tcp                     ALLOW       Anywhere                  
+#4505                       ALLOW       Anywhere                  
+#4506                       ALLOW       Anywhere                  
+#80/tcp                     ALLOW       Anywhere                  
+#22/tcp (v6)                ALLOW       Anywhere (v6)             
+#4505 (v6)                  ALLOW       Anywhere (v6)             
+#4506 (v6)                  ALLOW       Anywhere (v6)             
+#80/tcp (v6)                ALLOW       Anywhere (v6)             
+
 /etc/ufw/user.rules
   file.managed:
     - source: salt://firewall/user.rules
