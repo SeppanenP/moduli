@@ -26,6 +26,9 @@ Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
 ## LAMP ja MariaDB
 
 Lamp asentaa LAMP-kilkeet, aktivoi PHP:n, kotisivut, käyttäjän oman sivun ja tekee MariaDB:lle products-tietokannan, käyttäjän ja sille oikeudet tietokantaan. Tämän lisäksi estetään root-kirjautuminen.
+
+MariaDB on uusi tuttavuus minulle ja ohjeita asennukseen ja käyttöön löysin Tero Karvisen sivuilta:
+http://terokarvinen.com/2018/install-mariadb-on-ubuntu-18-04-database-management-system-the-new-mysql
     
 ## Firewall
 
