@@ -23,5 +23,5 @@ ufw-enable:
   cmd.run:
     - name: 'ufw --force enable'
     - watch:
-    - file: /etc/ufw/user.rules
-    - file: /etc/ufw/user6.rules
+      - file: /etc/ufw/user.rules
+      - file: /etc/ufw/user6.rules
