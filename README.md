@@ -141,7 +141,10 @@ MariaDB avautui käyttäjälle test ja hän näki luodun tietokannan sisällön 
 ## Lähteet
 
 http://terokarvinen.com/
+
 https://www.richterich.me/index.php/salt-states/ufw/ 
+
 https://www.comentum.com/unix-linux-ip-firewall.html
+
 https://github.com/joonaleppalahti/CCM/blob/master/salt/srv/salt/firewall.sls
 
