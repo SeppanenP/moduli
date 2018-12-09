@@ -122,6 +122,19 @@ Kirjautuminen root-tunnuksella ei onnistunut
 
     root@68.183.223.125's password:
     Access denied
+    
+MariaDB avautui käyttäjälle test ja hän näki luodun tietokannan sisällön ja pystyi tekemään muutoksia kantaan
+
+    MariaDB [products]> select * from products;
+    +----+-------------+-------+
+    | id | name        | price |
+    +----+-------------+-------+
+    |  1 | Product 1   |  99.9 |
+    |  2 | Product 2   |  55.5 |
+    |  3 | New Product | 15.45 |
+    +----+-------------+-------+
+    3 rows in set (0.00 sec)
+
 
 
 
