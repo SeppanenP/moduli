@@ -25,7 +25,7 @@ Aina kun aloitin modulin teon kopioin Githubin viimeisimmän varaston koneelle
      
 ## LAMP ja MariaDB
 
-Lamp asentaa LAMP-kilkeet, aktivoi PHP:n, kotisivut, käyttäjän oman sivun ja tekee MariaDB:lle products-tietokannan, käyttäjän ja sille oikeudet tietokantaan. Tämän lisäksi estetään root-kirjautuminen.
+Lamp asentaa LAMP-kilkeet, aktivoi PHP:n, oletussivun, käyttäjän oman sivun ja tekee MariaDB:lle products-tietokannan, käyttäjän ja sille oikeudet tietokantaan. Tämän lisäksi estetään root-kirjautuminen.
 
 MariaDB on uusi tuttavuus minulle ja ohjeita asennukseen ja käyttöön löysin Tero Karvisen sivuilta:
 http://terokarvinen.com/2018/install-mariadb-on-ubuntu-18-04-database-management-system-the-new-mysql
@@ -77,6 +77,21 @@ Tulokset:
       Result: True
      Comment: Service restarted
  
+
+Palomuuri:
+    seppanen@ubuntuminion:~$ sudo ufw status
+    Status: active
+
+    To                         Action      From
+    --                         ------      ----
+    22/tcp                     ALLOW       Anywhere
+    4505                       ALLOW       Anywhere
+    4506                       ALLOW       Anywhere
+    80/tcp                     ALLOW       Anywhere
+    22/tcp (v6)                ALLOW       Anywhere (v6)
+    4505 (v6)                  ALLOW       Anywhere (v6)
+    4506 (v6)                  ALLOW       Anywhere (v6)
+    80/tcp (v6)                ALLOW       Anywhere (v6)
 
 
 
