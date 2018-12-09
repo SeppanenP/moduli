@@ -90,7 +90,7 @@ Tämän jälkeen kopioin git-varaston koneelle ja ajoin modulin paikallisesti:
               sshd:
                   True
 
-Paluuurin aktivointi:
+Palomuurin aktivointi:
 
               ID: ufw-enable
     Function: cmd.run
