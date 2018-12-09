@@ -42,6 +42,8 @@ apache2service:
   file.managed:
     -source: salt://lamp/sshd_config
 
-login-disable:
+rootlogin-disable:
   cmd.run:
     - name: 'sudo service ssh restart'
+    - watch:
+      - file: /etc/ssh/sshd_config
