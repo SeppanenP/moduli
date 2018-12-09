@@ -47,7 +47,7 @@ Kopioin nämä moduliin firewall-kansioon ja tein sinne myös init.sls -tiedosto
 
 Tein DigitalOcean palveluun koneen johon tein uuden sudo-käyttäjän, asensin paketit git ja salt-minion. Koneen ip on 68.183.223.125. Tein mutaman testin ennen kuin ajoin modulin paikallisesti.
 
-    seppanen@ubuntuminion:~$ sudo ufw status
+    seppanen@SlaveXub:~$ sudo ufw status
     Status: inactive
     
 Kokeilin myös oman koneeni selaimella saanko ip-osoitteella näkyviin modulin oletussivua, mutta sain näkyviin vain tekstin
@@ -59,7 +59,7 @@ Tämän jälkeen kopioin git-varaston koneelle ja ajoin modulin paikallisesti:
 
     sudo salt-call --local state.highstate --file-root srv/salt
     
-Tulokset:
+### Testauksen tulokset
 
     Summary for local
     -------------
@@ -77,10 +77,33 @@ Tulokset:
       Result: True
      Comment: Service restarted
  
+ sshd uudelleenkäynnistys:
+ 
+              ID: sshd
+    Function: service.running
+      Result: True
+     Comment: Service restarted
+     Started: 20:15:10.228059
+    Duration: 61.482 ms
+     Changes:
+              ----------
+              sshd:
+                  True
 
-Palomuuri:
+Paluuurin aktivointi:
 
-    seppanen@ubuntuminion:~$ sudo ufw status
+              ID: ufw-enable
+    Function: cmd.run
+        Name: ufw --force enable
+      Result: True
+     Comment: Command "ufw --force enable" run
+     Started: 20:15:49.896523
+    Duration: 423.155 ms
+
+
+Palomuurin asetuksen komentorivillä:
+
+    seppanen@SlaveXub:~$ sudo ufw status
     Status: active
     To                         Action      From
     --                         ------      ----
@@ -93,7 +116,12 @@ Palomuuri:
     4506 (v6)                  ALLOW       Anywhere (v6)
     80/tcp (v6)                ALLOW       Anywhere (v6)
 
+Kun laittoi palvelimen ip-osoitteen (68.183.223.125) oman koneen selaimelle avautui oletussivu. Kun perään laittoi vielä käyttäjän 68.183.223.125/~seppanen, niin avautui käyttäjän oma sivu ja PHP toimi sivulla.
 
+Kirjautuminen root-tunnuksella ei onnistunut
+
+    root@68.183.223.125's password:
+    Access denied
 
 
 
