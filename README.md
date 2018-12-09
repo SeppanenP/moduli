@@ -79,9 +79,9 @@ Tulokset:
  
 
 Palomuuri:
+
     seppanen@ubuntuminion:~$ sudo ufw status
     Status: active
-
     To                         Action      From
     --                         ------      ----
     22/tcp                     ALLOW       Anywhere
