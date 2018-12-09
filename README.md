@@ -58,6 +58,28 @@ Kokeilin myös oman koneeni selaimella saanko ip-osoitteella näkyviin modulin o
 Tämän jälkeen kopioin git-varaston koneelle ja ajoin modulin paikallisesti:
 
     sudo salt-call --local state.highstate --file-root srv/salt
+    
+Tulokset:
+
+    Summary for local
+    -------------
+    Succeeded: 19 (changed=17)
+    Failed:     0
+    -------------
+    Total states run:     19
+    Total run time:   80.083 s
+    
+ Apachen uudelleenkäynnistys:
+ 
+           ID: apache2service
+    Function: service.running
+        Name: apache2
+      Result: True
+     Comment: Service restarted
+ 
+
+
+
 
 
 ## Lähteet
