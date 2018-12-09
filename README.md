@@ -45,7 +45,7 @@ Kopioin nämä moduliin firewall-kansioon ja tein sinne myös init.sls -tiedosto
     
 ## Modulin testaus
 
-Tein DigitalOcean palveluun koneen johon tein uuden sudo-käyttäjän, asensin paketit git ja salt-minion. Koneen ip on 68.183.71.140. Tein mutaman testin ennen kuin ajoin modulin paikallisesti.
+Tein DigitalOcean palveluun koneen johon tein uuden sudo-käyttäjän, asensin paketit git ja salt-minion. Koneen ip on 68.183.223.125. Tein mutaman testin ennen kuin ajoin modulin paikallisesti.
 
     seppanen@ubuntuminion:~$ sudo ufw status
     Status: inactive
