@@ -9,4 +9,3 @@ newuser:
     - groups:
       - adm
     - password: goodpassword
-# - key.pub: True
