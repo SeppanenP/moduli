@@ -38,6 +38,9 @@ apache2service:
       - file: /etc/apache2/mods-available/php7.2.conf
       
 #disable root login
+openssh-server:
+  pkg.installed
+  
 /etc/ssh/sshd_config:
   file.managed:
     - source: salt://lamp/sshd_config
