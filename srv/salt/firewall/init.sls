@@ -1,7 +1,7 @@
 ufw:
   pkg.installed
 
-#Set ufw rules
+#Set these rules
 #22/tcp                     ALLOW       Anywhere                  
 #4505                       ALLOW       Anywhere                  
 #4506                       ALLOW       Anywhere                  
