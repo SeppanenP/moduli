@@ -1,3 +1,4 @@
+#just a test. don't work
 newuser:
   user.present:
     - fullname: newuser
@@ -8,5 +9,4 @@ newuser:
     - groups:
       - adm
     - password: goodpassword
-    - enforce_password: True
 # - key.pub: True
