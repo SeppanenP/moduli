@@ -15,7 +15,7 @@ libapache2-mod-php:
     - source: salt://lamp/php7.2.conf
     
 #User WWW
-/home/xubuntu/public_html/index.php:
+/home/seppanen/public_html/index.php:
   file.managed:
     - source: salt://lamp/index.php
     - makedirs: True
