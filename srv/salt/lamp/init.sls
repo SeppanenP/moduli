@@ -14,8 +14,8 @@ libapache2-mod-php:
   file.managed:
     - source: salt://lamp/php7.2.conf
     
-#HTML for user newuser
-/home/newuser/public_html/index.php:
+#HTML for user seppanen
+/home/seppanen/public_html/index.php:
   file.managed:
     - source: salt://lamp/index.php
     - makedirs: True
