@@ -1,6 +1,6 @@
 base:
   '*':
-    - user
+#   - user
     - lamp
     - setmariadb
     - firewall
