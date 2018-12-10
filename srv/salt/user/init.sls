@@ -1,4 +1,5 @@
 #Add new user newuser
+#Just a test. Not in top.sls
 newuser:
   user.present:
     - fullname: newuser
