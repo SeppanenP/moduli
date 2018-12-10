@@ -1,11 +1,10 @@
-#just a test. don't work
+#Add new user newuser
 newuser:
   user.present:
     - fullname: newuser
-    - shell: /bin/bash
+    - shell: /bin/zsh
     - home: /home/newuser
-    - uid: 4000
-    - gid: 4000
     - groups:
       - adm
-    - password: goodpassword
+      - sudo
+    - password: good_password_here
